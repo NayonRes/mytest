@@ -13,6 +13,7 @@ const EmployeeListView = ({tableDataList, setUpdateObj}) => {
  
   const [loading, setLoading] = useState(false);
   const [message, setMessage] = useState("No data found");
+  
 
   useEffect(() => {}, []);
 

@@ -313,7 +313,7 @@ const EmployeeForm = ({
   };
 
   const getListAndValue = (updateObj) => {
-    console.log("updateObj", updateObj);
+    
     if (updateObj?.employeeID) {
       clearForm();
       setName(updateObj.name);
@@ -387,7 +387,7 @@ const EmployeeForm = ({
           listOfList.push(forthlastParentList);
         }
       }
-      console.log("listOfList", listOfList);
+       
       if (listOfList.length === 4) {
         setSectorValues({
           sectorValue: forthlastParent?.value,
@@ -511,6 +511,7 @@ const EmployeeForm = ({
       subDepartmentItemError: false,
       termsError: false,
     });
+    setUpdateObj({});
   };
 
   useEffect(() => {
